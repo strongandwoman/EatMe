@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Behemian glassware</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>We are Open!</h1>
+    </div>
+    <div class="container">
+      <div class="item one">
+        <h4>Soft egg & Avocado</h4>
+        <p class="calories">Calories: 333</p>
+        <p class="price">$9.99</p>
+      </div>
+      <div class="item two">
+        <h4>Viennese waffles</h4>
+        <p class="calories">Calories: 244</p>
+        <p class="price">$11.99</p>
+      </div>
+      <div class="item three">
+        <h4>Brown mood</h4>
+        <p class="calories">Calories: 571</p>
+        <p class="price">$10.99</p>
+      </div>
+      <div class="item four">
+        <h4>Bright start omelette</h4>
+        <p class="calories">Calories: 212</p>
+        <p class="price">$10.50</p>
+      </div>
+      <div class="item five">
+        <h4>Not an easy start</h4>
+        <p class="calories">Calories: 434</p>
+        <p class="price">$14.99</p>
+      </div>
+      <div class="item six">
+        <h4>Beans Creamy Veggie Salad</h4>
+        <p class="calories">Calories: 360</p>
+        <p class="price">$13.75</p>
+      </div>
+    </div>
+    <!--FORM-->
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
+    <script>
+      /* paste this in verbatim */
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+
+      /* customize formbutton here*/
+      formbutton("create", {
+        action: "https://formspree.io/YOUR_FORM_ID",
+        title: "Let us know how we are",
+        fields: [
+          {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "your@email.com",
+          },
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "What's on your mind?",
+          },
+          { type: "submit" },
+        ],
+        styles: {
+          title: {
+            backgroundColor: "dark",
+          },
+          button: {
+            backgroundColor: "dark",
+          },
+        },
+        initiallyVisible: false,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
